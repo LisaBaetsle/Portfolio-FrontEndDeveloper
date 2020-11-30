@@ -1,0 +1,126 @@
+@import 'fonts';
+@import 'colors';
+
+*{
+  margin: 0;
+  padding:0;
+  box-sizing: border-box;
+  font-family: $fontBody;
+  font-weight: 400;
+  color: $black;
+}
+
+// NAVIGATION
+nav {
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    background-color: $Dgreen;
+    overflow-x: hidden;
+    transition: 0.5s;
+  }
+
+  .overlay-content {
+    position: relative;
+    top: 25%;
+    width: 100%;
+    text-align: center;
+  }
+
+  .overlay-socials {
+    position: relative;
+    top: 40%;
+    text-align: center;
+  }
+
+  .overlay a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .overlay-content a {
+    padding: 10px;
+    font-size: 36px;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .overlay-socials a {
+    padding: 0 20px;
+    font-size: 36px;
+    transition: 0.3s;
+
+    .fab {
+      color: white;
+    }
+  }
+
+  .overlay a:hover,
+  .overlay a:focus {
+    color: $green;
+
+    .fab {
+      color: $green;
+    }
+  }
+
+  .overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    left: 50px;
+    font-size: 45px;
+  }
+
+  .navbar-toggle {
+    position: absolute;
+    top: 35px;
+    left: 50px;
+    cursor: pointer;
+    font-size: 32px;
+
+    .fa-bars {
+      color: $green;
+    }
+  }
+}
+
+.container-home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('img/bg-logo@2x.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+
+  .text {
+    position: absolute;
+    top: 30%;
+    left: 14%;
+
+    h1 {
+      font-size: 90px;
+      line-height: 6.5rem;
+    }
+
+    p {
+      font-size: 22px;
+      padding-top: 16px;
+      color: $Dgreen;
+    }
+
+    span {
+      color: $green;
+    }
+  }
+
+  img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 75%;
+  }
+}

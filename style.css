@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 400;
+  color: #141414;
+}
+
+nav .overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: #1A383C;
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+nav .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+}
+
+nav .overlay-socials {
+  position: relative;
+  top: 40%;
+  text-align: center;
+}
+
+nav .overlay a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .overlay-content a {
+  padding: 10px;
+  font-size: 36px;
+  display: block;
+  transition: 0.3s;
+}
+
+nav .overlay-socials a {
+  padding: 0 20px;
+  font-size: 36px;
+  transition: 0.3s;
+}
+
+nav .overlay-socials a .fab {
+  color: white;
+}
+
+nav .overlay a:hover,
+nav .overlay a:focus {
+  color: #78B19B;
+}
+
+nav .overlay a:hover .fab,
+nav .overlay a:focus .fab {
+  color: #78B19B;
+}
+
+nav .overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  font-size: 45px;
+}
+
+nav .navbar-toggle {
+  position: absolute;
+  top: 35px;
+  left: 50px;
+  cursor: pointer;
+  font-size: 32px;
+}
+
+nav .navbar-toggle .fa-bars {
+  color: #78B19B;
+}
+
+.container-home {
+  width: 100vw;
+  height: 100vh;
+  background-image: url("img/bg-logo@2x.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+
+.container-home .text {
+  position: absolute;
+  top: 30%;
+  left: 14%;
+}
+
+.container-home .text h1 {
+  font-size: 90px;
+  line-height: 6.5rem;
+}
+
+.container-home .text p {
+  font-size: 22px;
+  padding-top: 16px;
+  color: #1A383C;
+}
+
+.container-home .text span {
+  color: #78B19B;
+}
+
+.container-home img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  height: 75%;
+}
+/*# sourceMappingURL=style.css.map */
