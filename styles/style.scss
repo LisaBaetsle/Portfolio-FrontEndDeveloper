@@ -1,13 +1,36 @@
 @import 'fonts';
 @import 'colors';
+@import 'characterStyles';
 
-*{
+* {
   margin: 0;
-  padding:0;
+  padding: 0;
   box-sizing: border-box;
   font-family: $fontBody;
   font-weight: 400;
   color: $black;
+  font-size: 18px;
+  line-height: 1.8rem;
+}
+
+span {
+  color: $green;
+  font-size: inherit;
+}
+
+h2 {
+  @include title;
+}
+
+.subtitle {
+  @include subtitle;
+}
+
+.container {
+  max-width: 970px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 120px;
 }
 
 .homepage-overlay {
@@ -67,7 +90,7 @@ nav {
   }
 
   .overlay-content a {
-    padding: 10px;
+    padding: 20px;
     font-size: 36px;
     display: block;
     transition: 0.3s;
@@ -80,6 +103,7 @@ nav {
 
     .fab {
       color: white;
+      font-size: 32px;
     }
   }
 
@@ -94,7 +118,7 @@ nav {
 
   .nav-overlay .closebtn {
     position: absolute;
-    top: 20px;
+    top: 35px;
     left: 50px;
     font-size: 45px;
   }
@@ -104,10 +128,10 @@ nav {
     top: 35px;
     left: 50px;
     cursor: pointer;
-    font-size: 32px;
 
     .fa-bars {
       color: $green;
+      font-size: 32px;
     }
   }
 }
@@ -135,10 +159,6 @@ nav {
       padding-top: 16px;
       color: $Dgreen;
     }
-
-    span {
-      color: $green;
-    }
   }
 
   img {
@@ -147,4 +167,104 @@ nav {
     right: 0;
     height: 75%;
   }
+}
+
+.info-container {
+  //padding-bottom: 120px;
+
+  .information {
+    display: flex;
+  }
+
+  .info-text {
+    max-width: 65%;
+    padding-right: 40px;
+  }
+
+  .info-img {
+    img {
+      width: 100%;
+    }
+  }
+}
+
+.skills {
+  padding: 60px 0;
+  background-color: $green;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+
+  .technical {
+    width: 50%;
+    text-align: right;
+    padding: 60px 72px 60px 0;
+    border-right: 2px solid white;
+  }
+
+  .soft {
+    padding-left: 70px;
+  }
+
+  ul li {
+    list-style-type: none;
+    line-height: 3rem;
+  }
+
+  .subtitle {
+    color: white;
+  }
+}
+
+.facts-container {
+  margin-bottom: 120px;
+
+  ul {
+    list-style: none;
+
+    li {
+      line-height: 3rem;
+    }
+  }
+  
+  ul li::before {
+    content: "\25B8";
+    color: $green;
+    display: inline-block;
+    width: 1.2em;
+  }
+}
+
+//Portfolio
+.portfolio-container {
+  background-color: $Dgreen
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  .card {
+
+    img {
+      width: 400px;
+      height: 250px;
+      object-fit: cover;
+    }
+  }
+}
+
+#triangle-bottomright {
+  width: 100vw;
+  height: 0;
+  border-bottom: 300px solid $green;
+  border-left: 100vw solid transparent;
+}
+
+#rectangle {
+  margin-bottom: 20px;
+  width: 100vw;
+  height: 10px;
+  background: $green;
 }

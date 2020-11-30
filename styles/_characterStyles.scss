@@ -1,0 +1,11 @@
+@mixin title {
+  font-size: 50px;
+  color: $black;
+  padding-bottom: 80px;
+}
+
+@mixin subtitle {
+  font-size: 36px;
+  color: $black;
+  padding-bottom: 30px;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>About me</title>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div id="myNav" class="nav-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+      <div class="overlay-socials">
+        <a href="https://www.linkedin.com/in/lisabaetsle/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/LisaBaetsle"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <span class="navbar-toggle" onclick="openNav()">
+      <i class="fas fa-bars"></i>
+    </span>
+  </nav>
+
+  <main>
+    <div class="container info-container">
+      <h2>About me<span>.</span></h2>
+      <div class="information">
+        <div class="info-text">
+          <p>Hi!<br>
+            My name is Lisa and I live in Ghent.<br>
+            After graduating as a cross media designer, my passion for coding awoke
+            and I got selected for the BeCode training to become a junior web developer.
+            Currently, I’m specializing in frontend development.<br>
+            <br>
+            I’m really eager to start working as a junior frontend developer.
+            So if you have an opportunity for me to make this a reality, please contact me.
+            I believe that, with the combination of my skills and the dedication
+            to keep learning, I can be a great fit for your team. </p>
+        </div>
+        <div class="info-img">
+          <img src="styles/img/profile-pic.png" alt="image of Lisa Baetsle">
+        </div>
+      </div>
+    </div>
+    <div id="triangle-bottomright"></div>
+    <div class="skills">
+      <div class="technical">
+        <p class="subtitle">TECHNICAL SKILLS</p>
+        <ul>
+          <li>HTML // CSS // Sass</li>
+          <li>JavaScript // React // GSAP</li>
+          <li>PHP // MySQL // API</li>
+          <li>GitHub // npm // Babel // Webpack</li>
+          <li>Adobe Xd // Illustrator</li>
+          <li>Indesign // Photoshop</li>
+        </ul>
+      </div>
+      <div class="soft">
+        <p class="subtitle">SOFT SKILLS</p>
+        <ul>
+          <li>Problem solving</li>
+          <li>Communication</li>
+          <li>Teamplayer</li>
+          <li>Flexibel</li>
+          <li>Eye for detail</li>
+          <li>Time manager</li>
+        </ul>
+      </div>
+    </div>
+    <div id="rectangle"></div>
+    <div id="rectangle"></div>
+    <div class="container facts-container">
+      <div class="facts">
+        <p class="subtitle">Fun facts<span>.</span></p>
+        <ul>
+          <li>I love traveling and discovering new cultures.</li>
+          <li>I make my own soap and cleaning products.</li>
+          <li>I love animals which made me become a veganist.</li>
+          <li>I have two awesome cats: Nala and Zazou (Yes, inspired by the Lion King)</li>
+          <li>I was an acrobatic gymnast for more than 15 years.</li>
+          <li>I’m currently learning some new tricks on wheels instead (rollerskating rocks!)</li>
+          <li>I’m teaching myself how to play the piano (ultimate goal: river flows in you - Yiruma)</li>
+        </ul>
+      </div>
+    </div>
+
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>
