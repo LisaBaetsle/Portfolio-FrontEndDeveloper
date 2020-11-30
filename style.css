@@ -7,7 +7,30 @@
   color: #141414;
 }
 
-nav .overlay {
+.homepage-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  background: #78B19B;
+  top: 0%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.homepage-overlay img {
+  width: 300px;
+}
+
+.homepage-overlay p {
+  color: #1A383C;
+  font-size: 60px;
+  margin-top: 20px;
+}
+
+nav .nav-overlay {
   height: 100%;
   width: 0;
   position: fixed;
@@ -32,7 +55,7 @@ nav .overlay-socials {
   text-align: center;
 }
 
-nav .overlay a {
+nav .nav-overlay a {
   text-decoration: none;
   color: white;
 }
@@ -54,17 +77,17 @@ nav .overlay-socials a .fab {
   color: white;
 }
 
-nav .overlay a:hover,
-nav .overlay a:focus {
+nav .nav-overlay a:hover,
+nav .nav-overlay a:focus {
   color: #78B19B;
 }
 
-nav .overlay a:hover .fab,
-nav .overlay a:focus .fab {
+nav .nav-overlay a:hover .fab,
+nav .nav-overlay a:focus .fab {
   color: #78B19B;
 }
 
-nav .overlay .closebtn {
+nav .nav-overlay .closebtn {
   position: absolute;
   top: 20px;
   left: 50px;
