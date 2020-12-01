@@ -372,4 +372,66 @@ nav .navbar-toggle .fa-bars {
 .portfolio-navigation .fas {
   padding: 0 10px;
 }
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact {
+  background-color: #78B19B;
+}
+
+.contact nav .navbar-toggle .fa-bars {
+  color: white;
+}
+
+.contact-container h2 {
+  color: #1A383C;
+}
+
+.contact-container h2 span {
+  color: white;
+}
+
+.contact-info {
+  width: 50%;
+}
+
+.contact-info p {
+  padding-bottom: 60px;
+}
+
+.contact-info ul {
+  list-style: none;
+}
+
+.contact-info ul li {
+  padding: 10px 0;
+}
+
+.contact-info .fas, .contact-info .fab {
+  padding-right: 26px;
+}
+
+.contact-info a {
+  text-decoration: none;
+}
+
+.logo-container {
+  text-align: center;
+  width: 50%;
+}
+
+.logo-container img {
+  width: 300px;
+}
+
+.logo-container .name {
+  color: #1A383C;
+  font-size: 60px;
+  padding-top: 24px;
+}
 /*# sourceMappingURL=style.css.map */

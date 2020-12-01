@@ -226,7 +226,7 @@ nav {
       line-height: 3rem;
     }
   }
-  
+
   ul li::before {
     content: "\25B8";
     color: $green;
@@ -239,9 +239,10 @@ nav {
 .portfolio {
   background-color: $Dgreen;
 }
+
 .portfolio-container {
   h2 {
-    color:white;
+    color: white;
   }
 }
 
@@ -253,6 +254,7 @@ nav {
 
   .card {
     margin-bottom: 120px;
+
     img {
       width: 400px;
       height: 250px;
@@ -328,6 +330,7 @@ nav {
 
 .about-project {
   margin: 100px 0;
+
   p {
     padding-right: 100px;
   }
@@ -343,7 +346,7 @@ nav {
       line-height: 2.8rem;
     }
   }
-  
+
   ul li::before {
     content: "\25B8";
     color: $green;
@@ -382,5 +385,72 @@ nav {
 
   .fas {
     padding: 0 10px;
+  }
+}
+
+.container-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;;
+  flex-wrap: wrap;
+}
+
+.contact {
+  background-color: $green;
+
+  nav {
+    .navbar-toggle {
+      .fa-bars {
+        color: white;
+        ;
+      }
+    }
+  }
+}
+
+.contact-container {
+  h2 {
+    color: $Dgreen;
+
+    span {
+      color: white;
+    }
+  }
+}
+
+.contact-info {
+  width: 50%;
+  p {
+    padding-bottom: 60px;
+  }
+  ul {
+    list-style: none;
+
+    li {
+      padding: 10px 0;
+    }
+  }
+
+  .fas, .fab {
+    padding-right: 26px;
+  }
+
+  a {
+    text-decoration: none;
+  }
+}
+
+.logo-container {
+  text-align: center;
+  width: 50%;
+
+  img {
+    width: 300px;
+  }
+
+  .name {
+    color: $Dgreen;
+    font-size: 60px;
+    padding-top: 24px;
   }
 }
