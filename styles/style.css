@@ -226,20 +226,49 @@ nav .navbar-toggle .fa-bars {
   width: 1.2em;
 }
 
-.portfolio-container {
+.portfolio {
   background-color: #1A383C;
 }
 
+.portfolio-container h2 {
+  color: white;
+}
+
 .cards-container {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+}
+
+.cards-container .card {
+  margin-bottom: 120px;
 }
 
 .cards-container .card img {
   width: 400px;
   height: 250px;
   object-fit: cover;
+}
+
+.cards-container .project-title {
+  color: white;
+  font-size: 26px;
+  padding: 14px 0 16px 0;
+}
+
+.cards-container .tech-used ul {
+  list-style: none;
+}
+
+.cards-container .tech-used ul li {
+  color: white;
+  font-size: 14px;
+  display: inline-block;
+  background-color: #78B19B;
+  padding: 0 10px;
+  margin-right: 16px;
+  border-radius: 5px;
 }
 
 #triangle-bottomright {
@@ -254,5 +283,93 @@ nav .navbar-toggle .fa-bars {
   width: 100vw;
   height: 10px;
   background: #78B19B;
+}
+
+.general-info {
+  padding-bottom: 100px;
+}
+
+.general-info h2 {
+  padding-bottom: 50px;
+}
+
+.general-info .category {
+  padding-bottom: 20px;
+  color: #1A383C;
+  font-size: 22px;
+}
+
+.general-info .description {
+  padding-bottom: 40px;
+  padding-right: 100px;
+}
+
+.general-info .btn-Dgreen {
+  background-color: #1A383C;
+  border: none;
+  color: white;
+  padding: 10px 24px;
+  border-radius: 10px;
+  margin-right: 30px;
+}
+
+.about-project {
+  margin: 100px 0;
+}
+
+.about-project p {
+  padding-right: 100px;
+}
+
+.tech-sheet {
+  padding-bottom: 100px;
+}
+
+.tech-sheet ul {
+  list-style: none;
+}
+
+.tech-sheet ul li {
+  line-height: 2.8rem;
+}
+
+.tech-sheet ul li::before {
+  content: "\25B8";
+  color: #78B19B;
+  display: inline-block;
+  width: 1.2em;
+}
+
+.subsubtitle {
+  color: #78B19B;
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+.image-container {
+  max-width: 970px;
+}
+
+.image-container img {
+  width: 100%;
+}
+
+.portfolio-navigation {
+  background-color: #78B19B;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.portfolio-navigation a {
+  text-decoration: none;
+  color: #1A383C;
+  font-size: 20px;
+}
+
+.portfolio-navigation .fas {
+  padding: 0 10px;
 }
 /*# sourceMappingURL=style.css.map */

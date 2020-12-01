@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <link rel="stylesheet" href="styles/style.css">
+  <title>Weather App</title>
+</head>
+
+<body>
+  <!-- NAVIGATION -->
+  <nav>
+    <div id="myNav" class="nav-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+      <div class="overlay-content">
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="portfolio.html">PORTFOLIO</a>
+        <a href="contact.html">CONTACT</a>
+      </div>
+      <div class="overlay-socials">
+        <a href="https://www.linkedin.com/in/lisabaetsle/"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/LisaBaetsle"><i class="fab fa-github"></i></a>
+      </div>
+    </div>
+
+    <span class="navbar-toggle" onclick="openNav()">
+      <i class="fas fa-bars"></i>
+    </span>
+  </nav>
+
+  <main>
+    <div class="weatherapp-container">
+      <div class="container">
+        <div class="general-info">
+          <h2>Weather App<span>.</span></h2>
+          <p class="category">DESIGN && DEVELOPMENT</p>
+          <p class="description">MISSION: 'You have been sent abroad for a 10-month work mission. Your family and
+            friends back home ask you about the weather where you live ALL. THE. TIME. Enough is enough, you decide to
+            build a small web application for them so that you can free your time to talk about more interesting
+            topics.'</p>
+          <input class="btn btn-Dgreen" type="button" value="Visit the website">
+          <input class="btn btn-Dgreen" type="button" value="Check it on Github">
+        </div>
+        <div class="image-container">
+          <img src="styles/img/weather-app.png" alt="homepage of the weather app">
+        </div>
+        <div class="about-project">
+          <p class="subsubtitle">
+            About this project.
+          </p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam lacinia, urna posuere mollis accumsan,
+            enim diam semper diam, efficitur accumsan ipsum purus eu sem. Pellentesque ac dignissim libero,
+            sollicitudin condimentum mi. Integer at tristique neque, ac consectetur magna. Pellentesque vitae dapibus
+            nibh,
+            non consectetur nunc. Curabitur in mi est. In facilisis vel lectus et mollis.
+            Mauris libero mi, pharetra at luctus eget, rhoncus sit amet tortor. Aenean sit amet finibus ex.</p>
+        </div>
+        <div class="tech-sheet">
+          <p class="subsubtitle">
+            Technical sheet.
+          </p>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>API</li>
+          </ul>
+        </div>
+      </div>
+      <div class="portfolio-navigation">
+        <a href='#'></a>
+        <a href="portfolio.html">back to portfolio</a>
+        <a href="popcofobie.html">next project<i class="fas fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

@@ -236,21 +236,49 @@ nav {
 }
 
 //Portfolio
+.portfolio {
+  background-color: $Dgreen;
+}
 .portfolio-container {
-  background-color: $Dgreen
+  h2 {
+    color:white;
+  }
 }
 
 .cards-container {
+  margin-top: 40px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
 
   .card {
-
+    margin-bottom: 120px;
     img {
       width: 400px;
       height: 250px;
       object-fit: cover;
+    }
+  }
+
+  .project-title {
+    color: white;
+    font-size: 26px;
+    padding: 14px 0 16px 0;
+  }
+
+  .tech-used {
+    ul {
+      list-style: none;
+
+      li {
+        color: white;
+        font-size: 14px;
+        display: inline-block;
+        background-color: $green;
+        padding: 0 10px;
+        margin-right: 16px;
+        border-radius: 5px;
+      }
     }
   }
 }
@@ -267,4 +295,92 @@ nav {
   width: 100vw;
   height: 10px;
   background: $green;
+}
+
+// Portfolio pages
+.general-info {
+  padding-bottom: 100px;
+
+  h2 {
+    padding-bottom: 50px;
+  }
+
+  .category {
+    padding-bottom: 20px;
+    color: $Dgreen;
+    font-size: 22px;
+  }
+
+  .description {
+    padding-bottom: 40px;
+    padding-right: 100px;
+  }
+
+  .btn-Dgreen {
+    background-color: $Dgreen;
+    border: none;
+    color: white;
+    padding: 10px 24px;
+    border-radius: 10px;
+    margin-right: 30px;
+  }
+}
+
+.about-project {
+  margin: 100px 0;
+  p {
+    padding-right: 100px;
+  }
+}
+
+.tech-sheet {
+  padding-bottom: 100px;
+
+  ul {
+    list-style: none;
+
+    li {
+      line-height: 2.8rem;
+    }
+  }
+  
+  ul li::before {
+    content: "\25B8";
+    color: $green;
+    display: inline-block;
+    width: 1.2em;
+  }
+}
+
+.subsubtitle {
+  color: $green;
+  font-size: 28px;
+  margin: 30px 0;
+}
+
+.image-container {
+  max-width: 970px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.portfolio-navigation {
+  background-color: $green;
+  width: 100vw;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  a {
+    text-decoration: none;
+    color: $Dgreen;
+    font-size: 20px;
+  }
+
+  .fas {
+    padding: 0 10px;
+  }
 }
